@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f3f3f3;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none; /* Para no tener el subrayado en los links */
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+}
+/* ---------------------------- */
+/*            Header            */
+/* ---------------------------- */
+
+header {
+  padding: 40px;
+}
+
+header .logo {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header .logo p {
+  color: #9b9b9b;
+}
+
+header .categorias {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+header .categorias a {
+  color: #9b9b9b;
+  margin: 10px 20px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+header .categorias a.activo {
+  color: #000;
+}
+
+/* ---------------------------- */
+/*        Div de quien Soy      */
+/* ---------------------------- */
+
+.quienSoy {
+  padding: 10px 50px;
+  background-color: #fff;
+  border: 1.5px solid #000;
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.quienSoy .hola {
+  padding-bottom: 5px;
+}
+
+.quienSoy .p1 {
+  padding: 5px;
+}
+
+.quienSoy .p2 {
+  padding: 15px 0px 0px 0px;
+}
+
+.quienSoy .languages {
+  padding: 5px 0 0 20px;
+  list-style: square;
+}
+
+.quienSoy ul li {
+  padding: 5px;
+}
+
+/* ---------------------------- */
+/*            Grid              */
+/* ---------------------------- */
+
+.grid {
+  position: relative;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s linear 0.5s;
+}
+
+.grid.imagenes-cargadas {
+  opacity: 1;
+}
+
+.grid .item {
+  position: absolute;
+  display: block;
+  padding-top: 0;
+  margin: 10px;
+  width: calc(33.33333333% - 20px);
+}
+
+.grid .item-contenedor {
+  position: relative;
+}
+
+.grid .item img {
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  vertical-align: top;
+}
+
+.grid .item img:hover {
+  cursor: pointer;
+}
+
+.zoom{
+  transition: width 1s, height 1s, transform 1s;
+}
+
+.zoom:hover{
+  transform : scale(1.07);
+}
+
+/* ---------------------------- */
+/*  Div ¿Por qué contratarme?   */
+/* ---------------------------- */
+
+.contratarme {
+  padding: 10px 50px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1.5px solid #000;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.contratarme .p1 {
+  padding: 5px;
+}
+
+/* ---------------------------- */
+/*       Div Contactos          */
+/* ---------------------------- */
+
+.contactos {
+  padding: 10px 50px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1.5px solid #000;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.contactos .contactMe {
+  padding-bottom: 15px;
+}
+
+.contactos input, textarea {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 15px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.contactos textarea {
+  min-height: 100px;
+  max-height: 200px;
+  min-width: 100%;
+  max-width: 100%;
+}
+
+#boton {
+  background: #31384a;
+  color: #fff;
+  padding: 20px;
+}
+
+#boton:hover {
+  cursor: pointer;
+}
